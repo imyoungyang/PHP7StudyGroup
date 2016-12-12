@@ -25,3 +25,11 @@ $some_var = 1;
                                             // it behaves like a function, so
                                             // it may be used in this context.
 echo $some_var ? 'true': 'false'; // changing the statement around
+
+echo "======== multiple arguments vs parentheses with concatenated ===== \n";
+
+echo "Sum: ", 1 + 2;
+echo "Hello ", isset($name) ? $name : "John Doe", "!";
+
+echo 'Sum: ' . (1 + 2);
+echo 'Hello ' . (isset($name) ? $name : 'John Doe') . '!';

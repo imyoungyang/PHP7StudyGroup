@@ -27,3 +27,6 @@ class DemoImmutable
 }
 
 var_dump(DemoImmutable::ANIMALS);
+
+const SSS = 1 + 2 + 3;
+echo SSS;
