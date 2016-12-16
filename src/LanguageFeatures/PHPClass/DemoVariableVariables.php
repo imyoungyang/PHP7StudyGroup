@@ -11,7 +11,8 @@ $priceEnum = array('Original', 'VIP', 'Employee');
 $priceList = array(300, 200, 100);
 
 // dump priceList to meaningful variable name;
-for ($i=0; $i < count($priceList); $i++) {
+$total = count($priceList);
+for ($i=0; $i < $total; $i++) {
     ${'price'.$priceEnum[$i]} = $priceList[$i];
 }
 
