@@ -25,10 +25,8 @@ class OpNode extends BaseNode
         switch ($this->operator) {
             case '+':
                 return $this->leftNode->evaluate() + $this->rightNode->evaluate();
-                break;
             case '*':
                 return $this->leftNode->evaluate() * $this->rightNode->evaluate();
-                break;
             //case ....
         }
     }

@@ -12,13 +12,10 @@ class Node
         switch ($this->operator) {
             case '#':
                 return $this->value;
-                break;
             case '+':
                 return $this->leftNode->evaluate() + $this->rightNode->evaluate();
-                break;
             case '*':
                 return $this->leftNode->evaluate() * $this->rightNode->evaluate();
-                break;
             //case ....
         }
     }
